@@ -9,7 +9,7 @@ var amount = 5;
 var score = 0;
 var playerColorTimer = 0;
 
-var player = new gameObject(canvas.width/2, canvas.height - 25, 50, 50, "#ffff00");
+player = new gameObject(canvas.width/2, canvas.height - 25, 50, 50, "#ffff00");
 player.force = 2;
 
 var hazards = [];
@@ -111,7 +111,8 @@ function checkHits()
     }
 }
 
-function drawGame()
+function drawGame() // remade old enterGame function i had. 
+                    // probably should have used it for Level 6 boss
 {
     for(var i = 0; i < amount; i++)
     {
